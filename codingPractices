@@ -1,9 +1,28 @@
 10.4
-
+DON'T DO THIS
 if (c++ = d++) {        // AVOID! (Java disallows)
     ...
 }
-instead do this
+DO THIS
 if ((c++ = d++) != 0) {
     ...
 }
+
+10.5.2
+DON'T DO THIS
+if (booleanExpression) {
+    return true;
+} else {
+    return false;
+}
+DO THIS
+return booleanExpression;
+
+10.5.3
+DON'T DO THIS
+(as the zero will be the condition for the ternary)
+x >= 0 ? x : -x;
+DO THIS
+(x >= 0) ? x : -x;
+             
+             
