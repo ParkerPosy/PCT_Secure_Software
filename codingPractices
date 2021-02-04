@@ -1,1 +1,9 @@
-Foobar
+10.4
+
+if (c++ = d++) {        // AVOID! (Java disallows)
+    ...
+}
+instead do this
+if ((c++ = d++) != 0) {
+    ...
+}
